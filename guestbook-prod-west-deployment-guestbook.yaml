@@ -15,8 +15,11 @@ spec:
         app: guestbook
     spec:
       containers:
-      - image: ghcr.io/akuity/guestbook:latest
-        name: guestbook
-        ports:
+      - env:
+        - name: FOO
+          value: bar
         - containerPort: 3000
           name: http
+        image: ghcr.io/frimik/guestbook:v0.0.2
+        name: guestbook
+        ports: null
