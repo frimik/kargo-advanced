@@ -17,5 +17,8 @@ spec:
       - image: ghcr.io/frimik/guestbook:latest
         name: guestbook
         ports:
+        env:
+        - name: FOO
+          value: bar
         - name: http
           containerPort: 3000

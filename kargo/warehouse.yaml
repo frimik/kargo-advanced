@@ -9,6 +9,7 @@ spec:
       repoURL: ghcr.io/frimik/guestbook
       imageSelectionStrategy: SemVer
       allowTags: ^v?[0-9]+\.[0-9]+\.[0-9]+([\+-].*)?$
+      strictSemvers: true
   - git:
       repoURL: https://github.com/frimik/kargo-advanced.git
       branch: main
